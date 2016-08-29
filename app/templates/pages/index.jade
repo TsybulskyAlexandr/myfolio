@@ -1,0 +1,101 @@
+extends ../layout/layout.jade
+
+block head
+	- var pageTitle = 'template';
+	- var pageDescription = 'index description'
+	- var pageKeywords = 'inde keywords'
+	- var pageStyleLink = 'css/common.css'
+block main
+	.block_overlay
+		.block_content_image
+			p Lorem ipsum dolor sit iusmod tempor
+			h2 incididunt bore
+			p Orem ipsum dolor sit amet, consectetur
+			img(src="img/brace.png", alt="brace")
+			button: a(href="#") KNOW MORE
+	.block_content
+		h3 about me
+		p ~~~~~~~~ :: ~~~~~~~~
+		p.center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <span>quis nostrud exercitation ullamco</span> laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.
+		.b_tablets: .b_tablets_in
+			.tablet
+				i.bulb
+				h4 Title goes here
+				p onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.
+			.tablet
+				i.pen
+				h4 Title goes here
+				p onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.
+			.tablet
+				i.cogwheel
+				h4 Title goes here
+				p onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.
+			.tablet
+				i.laptop
+				h4 Title goes here
+				p onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.
+	//***** BEGIN SERVICES ******
+	.b-services: .b-services_in
+		.services_content
+			h3 SERVICES
+			p ~~~~~ :: ~~~~~
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+			.tablets_wrapper
+				.tablet_item
+					i.globe
+					h4 Title goes here
+					p Onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.
+				.tablet_item
+					i.search
+					h4 Title goes here
+					p Onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.
+				.tablet_item
+					i.alarm
+					h4 Title goes here
+					p Onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.
+				.tablet_item
+					i.schedule
+					h4 Title goes here
+					p Onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.
+		img(src="img/services.png", class ="services_img" alt="")
+	//***** END SERVICES *****
+	//***** BEGIN WORK ******
+	.b_my-work
+		h3 MY WORK
+		p ~~~~~~~~ :: ~~~~~~~~
+		p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	//***** END WORK ******
+	//* ****** BEG GALLERY ***** */
+	.b_gallery
+		<img src="http://lorempixel.com/g/320/238">
+		<img src="http://lorempixel.com/320/238/sports">
+		<img src="http://lorempixel.com/320/238/technics">
+		<img src="http://lorempixel.com/320/238/people/some-text">
+		<img src="http://lorempixel.com/g/320/238">
+		<img src="http://lorempixel.com/320/238/sports">
+		<img src="http://lorempixel.com/320/238/technics">
+		<img src="http://lorempixel.com/320/238/people/some-text">
+	//* ****** END GALLERY ***** */
+	//* ****** BEG CONTACT ME ***** */
+	.b_contact_me
+		h3 CONTACT ME
+		p ~~~~~ :: ~~~~~
+		p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	//* ****** END CONTACT ME ***** */
+	//* ****** BEG FORM ***** */
+	.b_wrap-form
+		form(id="contact-form" class="form" action="#" method="POST" role="form")
+			.form-group
+				label(class="form-label" for="name") NAME
+				input(type="text" class="form-control" id="name" name="name" placeholder="NAME" tabindex="1" required)
+			.form-group
+				label(class="form-label" for="email") EMAIL ADDRESS
+				input(type="email" class="form-control" id="email" name="email" placeholder="EMAIL ADDRESS" tabindex="2" required)
+			.form-group
+				label(class="form-label" for="message") MESSAGE
+				input(type="text" name="message" class="form-control" class="width_input" id="message1" placeholder="MESSAGE" tabindex="3" required)
+			.form-group
+				label(class="form-label" for="message")
+				input(type="text" name="message" class="form-control" class="width_input" id="message2" tabindex="4")
+			button(type="submit" class="btn") SUBMIT
+	//* ****** END FORM ***** */

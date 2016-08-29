@@ -1,0 +1,18 @@
+@import "susy";
+
+$susy: (
+	columns: 12,
+	container: 1280px,
+	debug: (image: show),
+	global-box-sizing: border-box,
+	gutters: 20px/60px
+	);
+
+.header_in {
+	max-width: 1187px;
+	margin: 0 auto;
+}
+.b_tablets_in {
+	max-width: 1280px;
+	margin: 0 auto;
+}

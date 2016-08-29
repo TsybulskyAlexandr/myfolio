@@ -1,0 +1,235 @@
+@import "susy"
+.block_overlay
+	width: 100%
+	height: 100vh
+	background-image: url("../img/bg_content.jpg")
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	color: #fff
+.block_overlay:before
+	content: ''
+	display: block
+	width: 100%
+	height: 100vh
+	position: absolute
+	top: 0
+	left: 0
+	background-color: #000
+	z-index: 0
+	opacity: .54
+.block_content_image
+	position: relative
+	top: 50%
+	transform: translateY(-50%)
+	text-align: center
+	p:first-child
+		font-size: 30px
+		font-weight: 400
+		padding-bottom: 18px
+	h2
+		font-size: 68px
+		font-weight: 700
+		text-transform: uppercase
+		padding-bottom: 18px
+	p:last-of-type
+		font-size: 18px
+		font-weight: 400
+		padding-bottom: 48px
+	img
+		display: block
+		margin: 0 auto
+	button
+		margin-top: 52px
+		width: 196px
+		height: 47px
+		background-color: #cfc91d
+		border: none
+		a
+			text-decoration: none
+			display: block
+			color: #0b1016
+			font-size: 14px
+			font-weight: 700
+.block_content
+	max-width: 1280px
+	margin: 0 auto
+	text-align: center
+	h3
+		text-transform: uppercase
+		padding: 98px 0 38px
+	p:first-of-type
+		color: #7e8287
+		font-size: 16px
+		font-weight: 400
+		padding-bottom: 36px
+	p.center
+		max-width: 874px
+		line-height: 41px
+		margin: 0 auto
+		span
+			font-size: 23px
+			font-weight: 700
+.b_tablets
+	margin: 80px 0 100px 0
+	.tablet
+		display: inline-block
+		width: 161px
+		height: 179px
+		padding: 36px 63px
+		border-right: 1px solid #5e6767	
+		h4
+			color: #7e8287
+			font-weight: 700
+			padding: 29px 0
+		p
+			font-size: 11px
+			font-weight: 400
+			line-height: 21px
+		i.bulb
+			+s(vector-smart-object_bulb)
+			display: inline-block
+		i.pen
+			+s(vector-smart-object_pen)
+			display: inline-block
+		i.cogwheel
+			+s(vector-smart-object_cogwheel)
+			display: inline-block
+		i.laptop
+			+s(vector-smart-object_laptop)
+			display: inline-block
+	.tablet:last-of-type
+		border-right: none
+
+/* ****** BEG SERVICES ***** */
+.b-services
+	width: 100%
+	background-color: #f0f0e8
+.b-services_in
+	max-width: 1280px
+	margin: 0 auto
+	+clearFix
+.services_content
+	width: calc(50% - 93px - 83px)
+	float: left
+	padding: 74px 83px 0 93px
+	h3
+		padding-bottom: calc(43px - 20px)
+	p
+		line-height: 41px
+.tablet_item
+	float: left	
+	width: 163px
+	margin-top: 55px
+	h4
+		font-weight: 700
+		padding: 17px 0 19px 0
+	p
+		font-size: 11px
+		line-height: 21px
+	i.globe
+		+s(globe)
+		display: inline-block
+	i.search
+		+s(search)
+		display: inline-block
+	i.alarm
+		+s(alarm)
+		display: inline-block
+	i.schedule
+		+s(schedule)
+		display: inline-block
+.tablet_item:nth-child(2n+1)
+	margin-right: 114px
+.services_img
+	width: 50%
+	img
+		max-width: 100%
+		height: auto
+/* ****** END SERVICES ***** */
+
+/* ****** BEG MY WORK ***** */
+.b_my-work
+	max-width: 1280px
+	margin: 0 auto
+	text-align: center
+	padding-bottom: 78px
+	h3
+		margin-top: 110px
+		margin-bottom: 32px
+	p
+		line-height: 41px
+		max-width: 677px
+		margin: 0 auto
+/* ****** END MY WORK ***** */
+
+/* ****** BEG GALLERY ***** */
+.b_gallery
+	margin: 0 auto
+	max-width: 100%
+	margin-left: auto
+	margin-right: auto
+.b_gallery:after
+	content: " "
+	display: block
+	clear: both
+.b_gallery img
+	width: 25%
+	float: left
+/* ****** END BEG GALLERY ***** */
+
+/* ****** BEG CONTACT ME ***** */
+.b_contact_me
+	text-align: center
+	margin-bottom: 70px
+	h3
+		margin-top: 100px
+		margin-bottom: 32px
+	p
+		max-width: 677px
+		margin: 0 auto
+		line-height: 41px		
+/* ****** END CONTACT ME ***** */
+//* ****** BEG FORM ***** */
+.b_wrap-form
+	background-color: #0b0b0b
+	text-align: center
+	form
+		max-width: 917px
+		margin: 0 auto
+	input:focus
+		outline: none
+.b_wrap-form
+	::-webkit-input-placeholder	
+		font-size: 16px
+		color: #7e8287
+.textarea
+	resize: none
+	background-color: #0b0b0b
+.form-label
+	color: #5e9bfc
+	margin: 0
+	display: none
+	background-color: #0b0b0b		
+.form-control	
+	text-align: center
+	color: #7e8287
+	background-color: #0b0b0b
+	border: none
+	border-bottom: 1px solid #898989	
+	margin-top: 60px
+	line-height: 41px
+	font-size: 16px
+	width: 637px
+.width_input
+	width: 917px
+.btn
+	margin-top: 67px
+	margin-bottom: 70px
+	border: none
+	background-color: #cfc91d
+	color: #000
+	width: 196px
+	height: 47px
+//* ****** END FORM ***** */
