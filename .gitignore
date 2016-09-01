@@ -1,4 +1,4 @@
 /node_modules/**
 /psd/**
 /.sass-cache/**
-/public/**
+/public/**/fonts
