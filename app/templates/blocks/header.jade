@@ -1,15 +1,8 @@
-header
-	.header_in
-		nav
-			h1.logo my<span>folio</span>
-			ul.nav
-				li.active
-					a(href='#') home
+header: .header_in
+	h1.logo: a(href="#") my<span>folio</span>
+	nav.nav
+		- var valueLi = ["home", "about me", "services", "my work", "contact me"]
+		ul
+			for name in valueLi
 				li
-					a(href='#') about me
-				li
-					a(href='#') services
-				li
-					a(href='#') my work
-				li
-					a(href='#') contact me
+					a(href="#")= name

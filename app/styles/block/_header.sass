@@ -1,24 +1,25 @@
 header
-	background-color: #02918c
-	height: 61px
-	width: 100%
 	position: fixed
+	width: 100%
+	height: 61px
+	background-color: #02918c
 	z-index: 999
 .logo
-	display: inline-block
-	font-size: 26px
-	font-weight: 700
-	text-transform: uppercase
-	color: #fff
-	line-height: 61px
+	float: left
+	a
+		font-size: 26px
+		font-weight: 700
+		text-transform: uppercase
+		color: #fff
+		line-height: 61px
+		text-decoration: none
 	span
 		color: #cfc91d
 .nav
 	float: right
-	list-style: none
 	li
 		display: inline-block
-		margin-left: 50px		
+		margin-left: 50px
 	a
 		text-decoration: none		
 		font-size: 12px
@@ -27,22 +28,11 @@ header
 		line-height: 61px
 		color: #fff
 		display: block
+@media screen and (max-width: 1300px)
+	.header_in
+		padding: 0 5px
 @media screen and (max-width: 800px)
 	.nav
-		padding-right: 0		
-		background-repeat: no-repeat
-		background-position: 0% 50%
-		width: 150px
-		background-image: url("../img/menu.png")		
-		li
+		display: none
+		ul
 			display: none
-			margin: 0
-			text-align: center			
-		.active
-			display: block
-	.nav:hover
-		background-color: #02918c
-		background-position: 0% 4%		
-		li
-			display: block
-			border-bottom: 1px solid #ccc
